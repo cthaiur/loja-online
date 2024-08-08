@@ -1,0 +1,57 @@
+<script>
+	$(function() {
+		__adianti_set_language('pt');
+		__adianti_set_debug(false);
+	});
+</script>
+
+<div id="content-submenu-loja" style="width:100%">
+    
+    <div class="adianti-submenu">
+        {navigation}
+    </div>
+    
+</div>
+
+<section class="adianti-content">
+    <div class="box">
+        <div id="adianti_div_content"></div>
+        <div id="adianti_online_content"></div>
+    </div>
+</section>
+
+<style>
+.adianti-content {
+    padding-top:20px;
+    width:100%;
+}
+
+#content-submenu-loja {
+    /* background: whitesmoke; */
+    border-bottom: 1px solid silver;
+}
+
+.adianti-submenu {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.adianti-submenu ul {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.adianti-submenu ul li {
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.adianti-submenu ul li:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+
+.adianti-submenu ul li a {
+    color: silver;
+}
+</style>

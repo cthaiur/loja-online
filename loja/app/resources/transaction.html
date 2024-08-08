@@ -1,0 +1,333 @@
+<!--[main]-->
+
+<style>
+label {
+    user-select: all;
+}
+</style>
+
+<!--[steps]-->
+<div id="div_steps" style="padding-bottom: 10px">
+    <ul class="tpagestep">
+        <li class="complete">
+            <span class="step-number">1</span>
+            <span class="step-title">_t{Selection}</span>
+        </li>
+        <li class="complete">
+            <span class="step-number">2</span>
+            <span class="step-title">_t{Identification}</span>
+        </li>
+        <li class="complete">
+            <span class="step-number">3</span>
+            <span class="step-title">_t{Confirm transaction}</span>
+        </li>
+        <li class="active">
+            <span class="step-number">4</span>
+            <span class="step-title">_t{Payment}</span>
+        </li>
+    </ul>
+</div>
+<!--[/steps]-->
+
+<div class="panel panel-default" style="width: 100%;margin-bottom:3px">
+    <div class="panel-heading" style="width: 100%">
+        <div class="panel-title">_t{Customer data}</div>
+    </div>
+    <div class="panel-body" style="width: 100%">
+        <div class="form-horizontal">
+            <div class="form-group row">
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Name}</label>
+                </div>
+                <div class="col-sm-4">
+                    <label>{$name}</label>
+                </div>
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Address}</label>
+                </div>
+                <div class="col-sm-4">
+                    <label>{$address}, {$number}. {$complement}</label>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Document}</label>
+                </div>
+                <div class="col-sm-4">
+                    <label>{$document}</label>
+                </div>
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Neighborhood} </label>
+                </div>
+                <div class="col-sm-4">
+                    <label>{$neighborhood}</label>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Email}</label>
+                </div>
+                <div class="col-sm-4">
+                    <label>{$email}</label>
+                </div>
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Postal} </label>
+                </div>
+                <div class="col-sm-4">
+                    <label>{$postal}</label>
+                </div>
+            </div>
+            
+            <div class="form-group row">
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Phone}</label>
+                </div>
+                <div class="col-sm-4">
+                    <label>{$phone}</label>
+                </div>
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{City}</label>
+                </div>
+                <div class="col-sm-4">
+                    <label>{$city} - {$state}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--[product]-->
+<div class="panel panel-default" style="width: 100%;margin-bottom:3px">
+    <div class="panel-heading" style="width: 100%">
+        <div class="panel-title">_t{Order data}</div>
+    </div>
+    <div class="panel-body" style="width: 100%">
+        <div class="form-horizontal">
+            <!--[transaction_id]-->
+            <div class="form-group row">
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Code}</label>
+                </div>
+                <div class="col-sm-10 ">
+                    <label>{$id} {$transaction_id}</label>
+                </div>
+            </div>
+            <!--[/transaction_id]-->
+            
+            <div class="form-group row">
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Description}</label>
+                </div>
+                <div class="col-sm-10 ">
+                    <label>{$description}</label>
+                </div>
+            </div>
+            
+            <!--[status]-->
+            <div class="form-group row">
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Status}</label>
+                </div>
+                <div class="col-sm-2 ">
+                    <label>{$paymentstatus_name}</label>
+                </div>
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Payment Type}</label>
+                </div>
+                <div class="col-sm-4 ">
+                    <label>{$paymenttype_name}</label>
+                </div>
+            </div>
+            <!--[/status]-->
+            
+            <!--[tracking]-->
+            <div class="form-group row">
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Tracking number}</label>
+                </div>
+                <div class="col-sm-10">
+                    <label>{$shipping_code}</label>
+                </div>
+            </div>            
+            <!--[/tracking]-->
+            
+            <div class="form-group row">
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Amount}</label>
+                </div>
+                <div class="col-sm-2">
+                    <label>{$amount}</label>
+                </div>
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Price}</label>
+                </div>
+                <div class="col-sm-2">
+                    <label>{$currency} {$price}</label>
+                </div>
+                <div class="col-sm-2 control-label">
+                    <label class="bold">_t{Total}</label>
+                </div>
+                <div class="col-sm-2">
+                    <label>{$currency} {$total}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--[otherobject]-->
+{$object}
+<!--[/otherobject]-->
+
+<!--[/product]-->
+
+<!--[actions]-->
+<div class="panel panel-default" style="width: 100%;margin-bottom:3px" hiddable="900">
+    <div class="panel-heading" style="width: 100%">
+        <div class="panel-title">_t{Action log}</div>
+    </div>
+    <div class="panel-body" style="width: 100%">
+        <table width="100%" style="border-collapse:collapse">
+            <tr>
+                <td align="center"> <b>_t{Date}</b> </td>
+                <td align="center"> <b>_t{Action}</b> </td>
+            </tr>
+            <!--[actions-detail]-->
+            <tr style="background: {$color};">
+                <td style="border-bottom:{$borderwidth}px solid {$bordercolor}" align="center"> {$time} </td>
+                <td style="border-bottom:{$borderwidth}px solid {$bordercolor}" align="center"> {$action} </td>
+            </tr>
+            <!--[/actions-detail]-->
+        </table>
+    </div>
+</div>
+<!--[/actions]-->
+
+<!--[purchases]-->
+<div class="panel panel-default" style="width: 100%;margin-bottom:3px" hiddable="900">
+    <div class="panel-heading" style="width: 100%">
+        <div class="panel-title">_t{All transactions}</div>
+    </div>
+    <div class="panel-body" style="width: 100%">
+        <table width="100%" style="border-collapse:collapse">
+            <tr>
+                <td align="center"> <b>ID</b> </td>
+                <td align="center"> <b>_t{Date}</b> </td>
+                <td> <b>_t{Product}</b> </td>
+                <td align="right"> <b>_t{Total}</b> </td>
+                <td align="center"> <b>_t{Status}</b> </td>
+            </tr>
+            <!--[purchases-detail]-->
+            <tr style="background: {$color};">
+                <td style="border-bottom:{$borderwidth}px solid {$bordercolor}" align="center"> {$id} </td>
+                <td style="border-bottom:{$borderwidth}px solid {$bordercolor}" align="center"> {$operation_date} </td>
+                <td style="border-bottom:{$borderwidth}px solid {$bordercolor}" > {$product_description} </td>
+                <td style="border-bottom:{$borderwidth}px solid {$bordercolor}" align="right"> {$total} </td>
+                <td style="border-bottom:{$borderwidth}px solid {$bordercolor}" align="center">{$status_info} </td>
+            </tr>
+            <!--[/purchases-detail]-->
+            
+            <!--[purchases-total]-->
+            <tr style="background: whitesmoke;">
+                <td style="border-top:2px solid gray;font-weight:bold" colspan="3" align="center"> Total </td>
+                <td style="border-top:2px solid gray;font-weight:bold" align="right"> {$total} </td>
+                <td style="border-top:2px solid gray" align="center">  </td>
+            </tr>
+            <!--[/purchases-total]-->
+        </table>
+    </div>
+</div>
+<!--[/purchases]-->
+
+
+<!--[pagbutton]-->
+<script>
+__adianti_message('Informação importante', 'A compra ainda não está concluída, clique no botão de ação ao final para realizar o pagamento');
+</script>
+
+<div class="panel panel-default" style="width: 100%">
+    <div class="panel-footer" style="width: 100%; background:white">
+        <a style="margin-left:0px;display:block; padding: 10px !important; font-weight:bold; font-size: 12pt" href="{$url}" class="btn btn-success">
+            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+            Proceder com pagamento via PagSeguro
+        </a>
+    </div>
+</div>
+<!--[/pagbutton]-->
+
+<!--[paybutton]-->
+<script>
+__adianti_message('Informação importante', 'A compra ainda não está concluída, clique no botão de ação ao final para realizar o pagamento');
+</script>
+
+<div class="panel panel-default" style="width: 100%">
+    <div class="panel-footer" style="width: 100%; background:white">
+        <a style="margin-left:0px;display:block; padding: 10px !important; font-weight:bold; font-size: 12pt" href="{$url}" class="btn btn-success">
+            <i class="fab fa-paypal" aria-hidden="true"></i>
+            Proceder com pagamento via Paypal
+        </a>
+    </div>
+</div>
+<!--[/paybutton]-->
+
+<!--[tedbutton]-->
+<script>
+__adianti_message('Informação importante', 'A compra ainda não está concluída, clique no botão de ação ao final para realizar o pagamento');
+</script>
+
+<div class="panel panel-default" style="width: 100%">
+    <div class="panel-footer" style="width: 100%; background:white">
+        <a generator="adianti" style="margin-left:0px;display:block; padding: 10px !important; font-weight:bold; font-size: 12pt" href="{$url}" class="btn btn-success">
+            <i class="far fa-money-bill-alt" aria-hidden="true"></i>
+            Proceder com pagamento via TED
+        </a>
+    </div>
+</div>
+<!--[/tedbutton]-->
+
+<!--[comment]-->
+<div class="panel panel-default" style="width: 100%;margin-bottom:3px">
+    <div class="panel-body" style="width: 100%">
+        <div class="form-group row">
+            <div class="col-sm-12 control-label">
+                <div class="talert alert alert-dismissible alert-warning" role="alert">
+                    <b>Obs</b>: O processo de compra está quase finalizado. Agora, aguardaremos a confirmação de seu pagamento com o PagSeguro. Assim que o pagamento for identificado, seu pedido será enviado. Anote o código do pedido (em destaque acima) para facilitar futuras comunicações.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[/comment]-->
+
+<!--[comment2]-->
+<div class="panel panel-default" style="width: 100%;margin-bottom:3px">
+    <div class="panel-body" style="width: 100%">
+        <div class="form-group row">
+            <div class="col-sm-12 control-label">
+                <div class="talert alert alert-dismissible alert-warning" role="alert">
+                    <b>Obs</b>: Pagamento recebido. Seu produto será enviado em breve. Salve o código da transação (acima) para facilitar futuras comunicações.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[/comment2]-->
+
+<!--[comment3]-->
+<div class="panel panel-default" style="width: 100%;margin-bottom:3px">
+    <div class="panel-body" style="width: 100%">
+        <div class="form-group row">
+            <div class="col-sm-12 control-label">
+                <div class="talert alert alert-dismissible alert-warning" role="alert">
+                    <b>Obs</b>: Transação completa, mas o pagamento ainda está pendente. Você precisa autorizar o pagamento manualmente em sua conta Paypal.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--[/comment3]-->
+
+<!--[/main]-->

@@ -1,0 +1,11 @@
+/* your styles go here */
+
+.post-body table tr:first-child
+{
+    background: whitesmoke;
+}
+
+li.current_page_item a
+{
+    border-bottom: 1px solid gray;
+}

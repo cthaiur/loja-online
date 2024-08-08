@@ -1,0 +1,18 @@
+<article>
+  <!-- Blog Post -->
+  <div class="card mb-4">
+    <img class="card-img-top" src="admin/{image}" alt="Card image cap">
+    <div class="card-body">
+      <a href="index.php?action=show_post&post_id={id}&title={slug}" title="{title}" rel="bookmark">
+          <h2 class="card-title">{title}</h2>
+      </a>
+      <p class="card-text">{content}</p>
+      <a href="index.php?action=show_post&post_id={id}&title={slug}" class="btn btn-primary">Read More &rarr;</a>
+    </div>
+    <div class="card-footer text-muted">
+      Posted on {post_date} by {author}
+    </div>
+  </div>
+</article><!-- #post -->
+
+

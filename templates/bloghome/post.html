@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Adianti Microblog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="templates/{theme}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="templates/{theme}/css/blog-home.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js"> </script>
+  </head>
+
+  <body>
+      <script>
+        $(function() {
+            $('form-blog').replaceWith( function() { return $( this ).get(0).outerHTML.replace(/<(\/?)form-blog/g,'<$1form');} );
+        });
+      </script>
+      
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.php">Adianti Microblog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            {categories}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+
+          <!-- Title -->
+          <h1 class="my-4">{title}</h1>
+
+          <div class="avatar"><img src="admin/app/images/photos/{login}.jpg" onError="this.onerror=null;this.src='templates/{theme}/img/avatar5.png';" style="border-radius:50%" alt="User" alt="..." class="img-fluid" />
+          
+              <!-- Author -->
+              <p class="lead">
+                by
+                {author}
+              </p>
+          </div>
+
+          <hr>
+
+          <!-- Date/Time -->
+          <p>Posted on {post_date}</p>
+
+          <hr>
+
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="admin/{image}" alt="">
+
+          <hr>
+
+          <!-- Post Content -->
+          <p class="lead">{content}</p>
+          <div>{media}</div>
+          <hr>
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+          <!-- Search Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+              <form action="index.php?action=search_post" method="POST" style="width:100%">
+                <div class="input-group">
+                    <input type="text" name="search" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button">Go!</button>
+                    </span>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Archives</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul class="list-unstyled mb-0">
+                    {archives}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Tags</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-12">
+                  <ul class="list-unstyled mb-0">
+                    {taglist}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Side Widget</h5>
+            <div class="card-body">
+              {block1}
+            </div>
+          </div>
+          
+          <div class="card my-4">
+            <h5 class="card-header">Side Widget</h5>
+            <div class="card-body">
+              {block2}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="templates/{theme}/vendor/jquery/jquery.min.js"></script>
+    <script src="templates/{theme}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

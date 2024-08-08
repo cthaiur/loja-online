@@ -1,0 +1,811 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 12px;
+    line-height: 1.6em;
+    font-family: "Open Sans",Arial,sans-serif;
+    background: #ffffff;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+a, a:hover, a:focus, a:visited {
+    outline: none;
+    text-decoration: none;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 14px/24px "Open Sans", Helvetica Neue, Arial;
+}
+
+#page {
+    position: 
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 5%;
+//    min-width: 980px;
+}
+
+.wrapper {
+    
+    margin: 0 auto;
+}
+
+.main .column-one {
+    float: left;
+    width:250px;
+}
+
+.main .column-two {
+    margin-left: 10px;
+    float: left;
+    width: 70%;
+}
+
+.main .column-wide {
+    float: left;
+    width: 100%;
+}
+
+.widget_footer {
+    float: left;
+    width: 33%;
+}
+
+.widget_footer ul,
+.widget_sidebar ul {
+    padding-left: 20px;
+}
+
+/* ===================
+    ALL: Gray Theme
+   =================== */
+
+.header-container {
+    background: url(bk_header.png);
+}
+.subheader-container {
+}
+
+header {
+    background: #222222;
+    height: 70px;
+    position: relative;
+    z-index: 5;
+}
+
+article header {
+    background: none;
+    height: auto;
+    padding: 8px 0;
+    border: #CECEBF solid;
+    border-width: 1px 0;
+    margin-bottom: 3%;
+}
+
+.top {
+    position: relative;
+}
+
+.page-title {
+    background: #EEEEEE;
+    height: 46px;
+}
+
+.page-title h1 {
+    font-size: 17px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    width: auto;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.page-title h2 {
+    font-size: 17px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    width: auto;
+    display: inline-block;
+    padding-top: 16px;
+}
+
+
+.title {
+    color: white;
+}
+
+.top-menu-container, nav, .sf-menu
+{
+    float: left;
+}
+
+.top-menu-container
+{
+    margin-top: 30px;
+}
+
+nav
+{
+    width: 100%;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+.footer-container ul {
+    list-style: none;
+    margin: 0px;
+    padding:0px;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+
+
+.sf-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.sf-menu li {
+    padding-left: 28px;
+}
+
+.sf-menu a {
+    display: block;
+    padding: 0 0;
+
+    text-decoration: none;
+    font-weight: bold !important;
+    text-transform: uppercase;
+
+    color: #818181;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.sf-menu a :hover, .sf-menu li.current_page_item a{
+    color: white;
+}
+
+.sf-menu a:hover {
+    color: white;
+}
+
+a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+    top:            -0.1em;
+    background-position: 0 0; /* use translucent arrow for modern browsers*/
+}
+
+.sub-menu {
+    background: #222222;
+    left: 18px !important;
+}
+.sub-menu li {
+    padding: 11px;
+    float: left;
+}
+
+
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 0px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main .column-two  {
+    margin-top:5px;
+}
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* * { transition: all 0.3s ease-out; } */
+
+.site-title {
+    width: 250px;
+    height: 120px;
+    background: #fff;
+    float: left;
+    position: relative;
+    text-align: center;
+    margin-top:20px;
+    margin: 0;
+}
+
+.site-title img {
+    // margin-top: 10px;
+}
+
+.site-title a {
+    position: relative;
+    margin: auto;
+    height: auto;
+    line-height: 250px;
+    color: #fff;
+    margin-top:10px;
+    text-align:center;
+    align:center;
+    display:inline-block;
+    text-decoration: none;
+}
+.site-title a img {
+    display: block;
+}
+.site-description {
+    margin: 0;
+    position: absolute;
+    top: 85px;
+    left: 270px;
+    color: #D6D6D6;
+    font-weight: lighter;
+}
+
+.site-social {
+    margin: 0;
+    position: relative;
+    left: 50px;
+    top:-10px;
+    color: #D6D6D6;
+    float:right;
+
+}
+
+header .meta {
+    color: #79796A;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+header .meta li {
+    float: left;
+    padding: 0 3%;
+    border-right: 1px #CECEBF solid;
+}
+header .meta li:last-child {
+    border-right:0;
+}
+header .meta li .comments {
+    float: left;
+    padding-left: 20px;
+    background: url(../img/comments.png) no-repeat 0 7px;
+}
+header .meta li .comments a {
+    text-decoration: none;
+}
+header .meta li .tags {
+    padding-left: 20px;
+    background: url(../img/tags.png) no-repeat 0 4px;
+}
+.blog-thumb {
+    float: left;
+    margin-right: 3%;
+}
+.blog-entry {
+    float: left;
+    width: 60%;
+}
+
+.categories {
+    font-size: 90%;
+    color: #79796A;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.categories a {
+    color: #79796A;
+    text-decoration: none;
+}
+.post-title {
+    color: #00BFFF;
+    font-size: 200%;
+    font-weight: lighter;
+    margin: 3.5% 0;
+    line-height: 120%;
+}
+.post-title a {
+    color: #00BFFF;
+    text-decoration: none;
+}
+article {
+    margin-bottom: 5%;
+}
+.more-link {
+    color: #000000;
+    padding-right: 25px;
+    background: url(../img/continue.png) no-repeat right 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.sidebar-footer .widget-title {
+    color: #00BFFF;
+    font-size: 90%;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2em 0;
+}
+
+.column-two .widget-title {
+    color: #212121;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 1em -30px;
+    position: relative;
+    padding-left: 30px;
+    font-size: 1em;
+    background: url(../img/widget_title.png) no-repeat 0 4px;
+
+}
+
+.column-two ul {
+    margin-bottom: 0;
+}
+.column-two ul li, .sidebar-footer ul li {
+    margin: 4px 0;
+}
+.column-two ul li a, .sidebar-footer ul li a {
+    /*color: #575746;*/
+    text-decoration: none;
+}
+
+#comment-nav {
+    display: none;
+}
+.avatar {
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+}
+
+.commentlist {
+    list-style: none;
+    padding: 0;
+}
+.commentlist article header {
+    border: 0;
+}
+
+.commentlist article header img {
+    float: left;
+    margin-right: 30px;
+}
+.commentlist article header a {
+    font-style: normal;
+    text-decoration: none;
+    /*font-size: 85%;*/
+}
+
+.commentlist article header cite a {
+    font-weight: bold;
+
+}
+
+.commentlist article header cite {
+    height: 30px;
+    line-height: 30px;
+    border-right: 1px #79796A solid;
+    margin-right: 25px;
+    padding-right: 25px;
+}
+
+.commentlist article section {
+    color: #575746;
+    float: left;
+    padding-left: 95px;
+    margin-top:-30px;
+}
+.commentlist article section p {
+    margin: 0.3em 0;
+}
+.comment-reply-link {
+    clear: both;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 80ew%;
+    text-transform: uppercase;
+}
+
+#comments {
+    clear: both;
+    margin-top:7%;
+}
+.respond-form {
+    clear: both;
+    margin-top:3%;
+    float: left;
+}
+
+#comment-form-title h3, #comments h3 {
+    color: #868686;
+    font-size: 140%;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+#comment-form-elements {
+    list-style: none;
+    color: #212121;
+    padding: 0;
+}
+
+#comment-form-elements li {
+    margin: 10px 0;
+    float: left;
+    clear: both;
+}
+
+#comment-form-elements label, #contactForm label {
+    width: 170px;
+    text-transform: uppercase;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+#comment-form-elements input, #comment-form-elements textarea, #contactForm input, #contactForm textarea {
+    float: left;
+    width: 328px;
+    border: 1px #CCCCCC solid;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+}
+#comment-form-elements textarea, #contactForm textarea {
+    height: 130px;
+    line-height: 24px;
+}
+#comment-form-elements input.submitbutton, #contactForm button.submitbutton {
+    width: 125px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #00BFFF;
+    border: 0;
+    cursor: pointer;
+}
+
+.call_to_action {
+    width: 100%;
+    height: 140px;
+    background-image: url(bk_header.png);
+    line-height: 140px;
+    text-align: center;    
+    color: #00BFFF;
+    font-size: 200%;
+    font-weight: lighter;
+}
+.call_to_action .wrapper {
+    height: 100%;
+}
+
+.call_to_action a {
+    color: #fff;
+    background: #00BFFF;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: -15px 0 0 30px;
+    border-radius: 3px;
+}
+
+
+.radial_gradient {
+    width: 100%;
+    height: 100%;
+    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.25) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.25)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.25) 0%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+/* Contact Page */
+
+#contact-map {
+    float: left;
+    width: 100%; 
+    height: 350px; 
+    margin: 0 0 15px 0;
+}
+
+#contact-map iframe {
+    border: 0; 
+}
+
+#contact-form {
+    width: 60%; 
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+
+.error {
+color: #333;
+background: #FCE2D4 url('../img/error.png') no-repeat 5px 50%;
+margin-top: 5px;
+display:block;
+clear: both; 
+padding:7px;
+padding-left:30px;
+border-radius:6px;
+font-size:11px;
+border: 1px solid #fbc2c4;
+width:270px;
+}
+
+
+
+
+
+/* Pagination */
+.emm-title {
+    display: none;
+}
+.navbar {
+    padding: 45px 0 20px;
+}
+.navbar a, .navbar span {
+    border: 1px solid #CCCCCC;
+    background: none;
+    border-radius: 4px 4px 4px 4px;
+    margin: 0 4px;
+    padding: 5px 11px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    color: #CCCCCC;
+    transition: color 0.1s ease-in 0s;
+}
+.navbar .emm-title {
+    border: medium none;
+    padding-left: 0;
+    background: none;
+}
+.navbar .active {
+    color: #000;
+    font-weight: bold;
+}
+.navbar a:hover {
+    border-color: #00BFFF;
+    background: #00BFFF;
+    color: #fff;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+.wrapper {
+    width: 95%;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+.wrapper {
+    width: 90%;
+}
+}
+
+@media only screen and (min-width: 1500px) {
+.wrapper {
+    width: 80%;
+}
+}
+
+@media only screen and (min-width: 1800px) {
+.wrapper {
+    width: 73%;
+}
+}
+
+.quotebox
+{
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    padding:12px;
+    margin-top:10px;
+    margin-left:0px;
+    margin-bottom:5px;
+    width:223px;
+    text-align: center;
+    height:auto;
+    font-size: 10pt;
+    line-height: 140%;
+}

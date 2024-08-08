@@ -1,0 +1,15 @@
+{
+  "short_name": "Store",
+  "name": "Store",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "200x202"
+    }
+  ],
+  "start_url": "/loja/login",
+  "background_color": "#fff",
+  "display": "standalone",
+  "theme_color": "#69CAFF"
+}

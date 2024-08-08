@@ -1,0 +1,726 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>InFly</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon1.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="templates/{theme}/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="templates/{theme}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="templates/{theme}/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="templates/{theme}/css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home" style="position: absolute;">
+            <model-viewer id="change-speed-demo" class="model_intro" autoplay src="templates/{theme}/blue_bird.glb" ar camera-controls touch-action="pan-y"></model-viewer>
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+
+                    <h1 class="m-0"><img src="templates/{theme}/img/logo2.png"></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">Proposta</a>
+                        <a href="#feature" class="nav-item nav-link">Benefícios</a>
+                        <a href="#pricing" class="nav-item nav-link">Preço</a>
+                        <a href="#review" class="nav-item nav-link">Alunos</a>
+                        <a href="#contact" class="nav-item nav-link">Contato</a>
+                        <a href="/loja-online/loja" class="nav-item nav-link">Loja</a>
+                    </div>
+                    <a href="https://infly.net.br/rocket" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Área do Aluno</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header" >
+                <div class="container px-lg-5" style="height: 500px !important;">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Somos a InFly, onde a inovação se encontra com a qualidade!</h1>
+                            <p class="text-white pb-3 animated slideInDown">Chegou o momento de você explorar o nosso método de ensino. Quer conhecer conhecê-lo? <br><b>O marketing agradece :)</b></p>
+                            <a href="#about" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Apresentação</a>
+                            <a href="#feature" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Benefícios</a>
+                        </div>
+                        <!-- <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp">
+                            <div class="owl-carousel screenshot-carousel">
+                            	<model-viewer class="model_intro_astronaut" autoplay ar camera-controls touch-action="pan-y" src="./astronaut_little.glb" autoplay></model-viewer>    
+                            </div>                            
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5" id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">#PlataformaInterativa</h5>
+                        <h1 class="mb-4">Plataforma Interativa</h1>
+                        <p class="mb-4">Essa plataforma foi projetada para proporcionar uma experiência bidirecional, onde os alunos não apenas consomem conteúdo, mas também contribuem e interagem com o sistema e outros alunos.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">970</h2>
+                                        <p class="text-primary-gradient mb-0">Interações com o aluno</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">560</h2>
+                                        <p class="text-secondary-gradient mb-0">Alunos Ativos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="templates/{theme}/img/3telas.png">
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5 px-lg-5">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                  <iframe 
+                    src="https://player.stornaway.io/embed/4343a804"
+                    frameborder="0" 
+                    allowfullscreen
+                    allow="accelerometer; gyroscope;autoplay;"
+                    style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></iframe> 
+                  <script src="https://studio.stornaway.io/embed/v1/player.js" defer></script>
+                </div>
+            </div>
+            <!-- <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">#</h5>
+                        <h1 class="mb-4">Plataforma Interativa</h1>
+                        <p class="mb-4">Essa plataforma foi projetada para proporcionar uma experiência bidirecional, onde os usuários não apenas consomem conteúdo, mas também contribuem e interagem com o sistema e outros usuários.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">1234</h2>
+                                        <p class="text-primary-gradient mb-0">Active Install</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="d-flex">
+                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">1234</h2>
+                                        <p class="text-secondary-gradient mb-0">Clients Reviews</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png">
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- About End -->
+
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">#Diferentões</h5>
+                    <h1 class="mb-5">Recursos Incríveis</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-eye text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">High Resolution</h5>
+                            <p class="m-0">Na era do 5G, nada melhorar do que desfrutar de aulas em alta resolução.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-layer-group text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Rotina Pronta</h5>
+                            <p class="m-0">Trilha do curso interativo, além de materiais dinâmicos para sua aprendizagem.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-edit text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Exercícios</h5>
+                            <p class="m-0">Além da correção, fazemos debate sobre os temas e ativades abordadas.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-mobile-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Aplicativos</h5>
+                            <p class="m-0">Todas as aulas, exercícos, extratos e tudo o que você precisa a um toque de distância.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-users text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Comunidade</h5>
+                            <p class="m-0">Ingressando como nosso aluno você participará das turmas de whatsapp, além da comunidade na plataforma.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-shield-alt text-white fs-4"></i>
+                            </div>
+                            <h5 class="mb-3">Conta Segura</h5>
+                            <p class="m-0">Nossa empresa se importa com seus dados e a sua privacidade, por isso seguimos a LGPD.</p>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- Screenshot Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">#AFluenciaÉLogoAli</h5>
+                        <h1 class="mb-4">Reconhecemos que toda jornada requer persistência!</h1>
+                        <p class="mb-4">Começar um novo curso requer tempo e esforço, por isso coragem pra você que está na dúvida entre cursos convencionais e a nossa plafatorma. <br>Para lhe ajudar, trouxemos três pontos que julgamos importantes:</p>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Custos mais baixos;</p>
+                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Recursos digitais incríveis;</p>
+                        <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Suporte dedicado;</p>
+                        <a href="#pricing" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Eu já quero saber os preços</a>
+                    </div>
+
+                    <div class="col-lg-5 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                    	<model-viewer id="change-speed-demo" class="model_astronaut_rocket" autoplay src="templates/{theme}/astronaut_rocket.glb" ar camera-controls></model-viewer>
+                        <!-- <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="img/screenshot-1.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-2.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-3.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-4.png" alt="">
+                            <img class="img-fluid" src="img/screenshot-5.png" alt="">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Screenshot End -->
+
+
+        <!-- Process Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">#Simplifly</h5>
+                    <h1 class="mb-5">O caminho da fluência</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-rocket fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Acesse a plataforma</h5>
+                            <p class="mb-0">Acesse nossa plataforma na web ou pelo aplicativo que está disponível na Play Store e Apple Store.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-address-card fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Crie o seu perfil</h5>
+                            <p class="mb-0">Clicando em registrar-se você só precisará colocar suas informações e selecionar o plano desejado.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                            </div>
+                            <h5 class="mt-4 mb-3">Flua na plataforma</h5>
+                            <p class="mb-0">Avisamos que haverá aulas que você vai querer assistir mais de uma vez pra ver o rumo que ela toma ;)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
+
+
+        <!-- Download Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="templates/{theme}/img/3telas.png">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium">#Download</h5>
+                        <h1 class="mb-4">Baixe a versão mais recente do nosso aplicativo</h1>
+                        <p class="mb-4">Garanta acesso em nossa plataforma de aprendizado online e acesse nossa variedade de recursos digitais, como vídeos e quizzes interativos, fóruns de discussão e materiais de leitura, que tornam o aprendizado mais envolvente.</p>
+                        <div class="row g-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Disponível na</p>
+                                        <h5 class="text-white mb-0">App Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Disponível na</p>
+                                        <h5 class="text-white mb-0">Play Store</h5>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Download End -->
+
+
+        <!-- Pricing Start -->
+        <div class="container-xxl py-5" id="pricing">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">#QueremosDesconto</h5>
+                    <h1 class="mb-5">Escolha seu plano</h1>
+                </div>
+                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Mês</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Ano</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content text-start">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Plano Básico</h4>
+                                            <span>Recursos</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">R$</small>9,99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mês</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à plataforma web</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso aos materiais</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à comunidade</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso ao conteúdo livre</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Começar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Plano Avançado</h4>
+                                            <span>Recursos + Suporte</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">R$</small>34,99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mês</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso ao curso completo</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso ao material interativo</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso ao aplicativo mobile</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à comunidade da turma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à aulas extras</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Suporte do professor</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Começar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Plano Premium</h4>
+                                            <span>Acesso total</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">R$</small>234,99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mês</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à todos os cursos</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à todos os materias</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso ao aplicativo mobile</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à todas comunidade</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à aulas extras</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>                                            
+                                            <div class="d-flex justify-content-between mb-3"><span>Suporte de todos os professores</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Aulas particulares*</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Começar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Plano Básico</h4>
+                                            <span>Recursos</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">R$</small>94,99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Ano</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à plataforma web</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso aos materiais</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à comunidade</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso ao conteúdo livre</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Começar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded border">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Plano Avançado</h4>
+                                            <span>Recursos + Suporte</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">R$</small>344,99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mês</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso ao curso completo</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso ao material interativo</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso ao aplicativo mobile</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à comunidade da turma</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à aulas extras</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Suporte do professor</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Começar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="bg-light rounded">
+                                        <div class="border-bottom p-4 mb-4">
+                                            <h4 class="text-primary-gradient mb-1">Plano Premium</h4>
+                                            <span>Recursos + Suporte</span>
+                                        </div>
+                                        <div class="p-4 pt-0">
+                                            <h1 class="mb-3">
+                                                <small class="align-top" style="font-size: 22px; line-height: 45px;">R$</small>2.284,99<small
+                                                    class="align-bottom" style="font-size: 16px; line-height: 40px;">/ Mês</small>
+                                            </h1>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à todos os cursos</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à todos os materias</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso ao aplicativo mobile</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à todas comunidade</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Acesso à aulas extras</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>                                            
+                                            <div class="d-flex justify-content-between mb-3"><span>Suporte de todos os professores</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <div class="d-flex justify-content-between mb-3"><span>Aulas particulares*</span><i class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                            <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Começar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5" id="review">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">#InFlyencers</h5>
+                    <h1 class="mb-5">O que dizem nossos clientes!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="templates/{theme}/img/testimonial-1.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Brendha</h5>
+                                <p class="mb-1">Secretaria</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"A melhor forma de aprender que já utilizei."</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="templates/{theme}/img/testimonial-2.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Daniel</h5>
+                                <p class="mb-1">Programador</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Queria ter conhecido essa plataforma antes! Que forma incrível de aprender, além dos professores com ótima didática."</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="templates/{theme}/img/testimonial-3.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Hugo</h5>
+                                <p class="mb-1">Nômade Digital</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"No início estava recioso quanto a abordagem usada, mas posso dizer que estou muito supreso. Estou indo para o meu terceiro curso."</p>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="templates/{theme}/img/testimonial-4.jpg" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Patricia</h5>
+                                <p class="mb-1">Psicóloga</p>
+                                <div>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                    <small class="fa fa-star text-warning"></small>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mb-0">"O Inglês é muito necessário para diferenciação no mercado, encontrei o melhor método de aprendizado da internet. Obrigadaaa Infly! Vocês são incríveis."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">#EquipePronta</h5>
+                    <h1 class="mb-5">Entre em contato!</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-center mb-4">Se você ainda continua com dúvida, quer conhecer a plataforma ou até mesmo quer trabalhar conosco, entre em contato conosco pelo formulário abaixo ou pelo whatsapp abaixo. 
+                            <br><a href="https://wa.me/55996235142"><span><i class="fa fa-whatsapp text-primary-gradient pt-1"></i>Whatsapp por aqui</span></a>.
+                        	</p>
+                            <form action="enviar_email.php" method="post">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" name="nome" placeholder="Your Name">
+                                            <label for="name">Seu Nome</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                            <label for="email">Seu Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Assunto</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" name="mensagem" id="message" style="height: 150px"></textarea>
+                                            <label for="message">Mensagem</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Enviar Mensagem</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Endereço</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>234 Rua, Tupanciretã, RS</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+055 55 996235142</p>
+                        <p><i class="fa fa-envelope me-3"></i>contato@infly.net.br</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Link Rápidos</h4>
+                        <a class="btn btn-link" href="">Sobre Nós</a>
+                        <a class="btn btn-link" href="">Recursos</a>
+                        <a class="btn btn-link" href="">Política de Privacidade</a>
+                        <a class="btn btn-link" href="">Termos & Condições</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Link Acessados</h4>
+                        <a class="btn btn-link" href="">Sobre Nós</a>
+                        <a class="btn btn-link" href="">Recursos</a>
+                        <a class="btn btn-link" href="">Política de Privacidade</a>
+                        <a class="btn btn-link" href="">Termos & Condições</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Missão</h4>
+                        <p>"Elevar pessoas e empresas ao redor do mundo à concretizarem todo seu potencial, fluindo no processo."</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Seu Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="https://dataplace.net.br">DP Solutions</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            </br>
+                            Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="templates/{theme}/lib/wow/wow.min.js"></script>
+    <script src="templates/{theme}/lib/easing/easing.min.js"></script>
+    <script src="templates/{theme}/lib/waypoints/waypoints.min.js"></script>
+    <script src="templates/{theme}/lib/counterup/counterup.min.js"></script>
+    <script src="templates/{theme}/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="templates/{theme}/js/main.js"></script>
+</body>
+
+</html>

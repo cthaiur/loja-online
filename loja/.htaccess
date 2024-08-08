@@ -1,0 +1,42 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^transaction_pagseguro_end.html index.php?class=PagSeguroConfirmation&method=onLoad&%{QUERY_STRING} [NC]
+RewriteRule ^transaction_paypal_end.html index.php?class=PayPalConfirmation&method=onLoad&%{QUERY_STRING} [NC]
+
+RewriteRule ^pagseguro-notification index.php?class=PagSeguroNotification&method=receive&static=1&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-pagseguro-notification engine.php?class=PagSeguroNotification&method=receive&static=1&%{QUERY_STRING} [NC]
+
+RewriteRule ^product-list index.php?class=ProductPublicList&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-product-list engine.php?class=ProductPublicList&%{QUERY_STRING} [NC]
+
+RewriteRule ^my-orders index.php?class=OrderList&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-my-orders engine.php?class=OrderList&%{QUERY_STRING} [NC]
+
+RewriteRule ^view-order index.php?class=OrderView&method=onLoad&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-view-order engine.php?class=OrderView&method=onLoad&%{QUERY_STRING} [NC]
+
+RewriteRule ^profile-form index.php?class=CustomerProfileForm&method=onLoad&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-profile-form engine.php?class=CustomerProfileForm&method=onLoad&%{QUERY_STRING} [NC]
+
+RewriteRule ^login-confirmation index.php?class=LoginForm&method=onLoad&action=ConfirmationForm&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-login-confirmation engine.php?class=LoginForm&method=onLoad&action=ConfirmationForm&%{QUERY_STRING} [NC]
+
+RewriteRule ^login-admin index.php?class=AdminLoginForm&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-login-admin engine.php?class=AdminLoginForm&%{QUERY_STRING} [NC]
+
+RewriteRule ^login index.php?class=LoginForm&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-login engine.php?class=LoginForm&%{QUERY_STRING} [NC]
+
+RewriteRule ^buy-product$ index.php?class=ConfirmationForm&method=onLoad&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-buy-product$ engine.php?class=ConfirmationForm&method=onLoad&%{QUERY_STRING} [NC]
+
+RewriteRule ^change-password$ index.php?class=ChangePasswordForm&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-change-password$ engine.php?class=ChangePasswordForm&%{QUERY_STRING} [NC]
+
+RewriteRule ^ted-info$ index.php?class=TEDInformationView&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-ted-info$ engine.php?class=TEDInformationView&%{QUERY_STRING} [NC]
+
+RewriteRule ^logout$ index.php?class=LoginForm&method=onLogout&static=1&%{QUERY_STRING} [NC]
+RewriteRule ^xhr-logout$ engine.php?class=LoginForm&method=onLogout&static=1&%{QUERY_STRING} [NC]

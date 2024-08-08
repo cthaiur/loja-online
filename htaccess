@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+ErrorDocument 404 /notfound
+
+RewriteRule ^([0-9]+)$  index.php?action=show_post&post_id=$1
+
+RewriteRule ^artigos$ index.php?action=show_category&category_id=1
+RewriteRule ^eventos$ index.php?action=show_category&category_id=2

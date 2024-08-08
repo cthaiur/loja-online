@@ -1,0 +1,7 @@
+{
+    "require": {
+        "paypal/paypal-checkout-sdk": "^1.0",
+        "pagseguro/pagseguro-php-sdk": "^6.0",
+        "phpmailer/phpmailer": "^6.5"
+    }
+}

@@ -1,0 +1,29 @@
+<br>
+<article>
+
+    <div class="row d-flex align-items-stretch">
+      <div class="image col-lg-5" style="min-height: 344px;">
+          <a style="display:initial" href="index.php?action=show_post&post_id={id}&title={slug}">
+              <img src="admin/{image}" alt="...">
+          </a>
+      </div>
+      <div class="text col-lg-7" style="background:white">
+        <div class="text-inner d-flex align-items-center">
+          <div class="content">
+            <header class="post-header">
+              <a href="index.php?action=show_post&post_id={id}&title={slug}">
+                <h2 class="h4">{title}</h2></a>
+            </header>
+            <p>{subtitle}</p>
+            <footer class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+                <div class="avatar"><img src="admin/app/images/photos/{login}.jpg" onError="this.onerror=null;this.src='templates/b4-column/img/avatar5.png';" style="border-radius:50%" alt="User" alt="..." class="img-fluid" /></div>
+                <div class="title"><span>{author}</span></div></a>
+              <div class="date"><i class="icon-clock"></i> {post_date} </div>
+              <div class="date">{past_time}</div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</article><!-- #post -->

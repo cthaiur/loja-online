@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <menuitem label="Pessoas">
+    <icon>fas:users fa-fw</icon>
+    <action>PessoaList</action>
+  </menuitem>
+  <menuitem label="Vendas">
+    <action>VendaList</action>
+    <icon>fa:shopping-cart fa-fw</icon>
+  </menuitem>
+  <menuitem label="Notas Fiscais">
+    <icon>fas:clipboard-check fa-fw</icon>
+    <action>NotaFiscalList</action>
+  </menuitem>
+  <menuitem label="Configurações">
+    <icon>fas:business-time fa-fw</icon>
+    <menu>
+      <menuitem label="Tipos de Serviço">
+        <action>TipoServicoList</action>
+        <icon>far:circle fa-fw</icon>
+      </menuitem>
+      <menuitem label="Serviços">
+        <action>ServicoList</action>
+        <icon>far:circle fa-fw</icon>
+      </menuitem>
+      <menuitem label="Naturezas de Operação">
+        <action>NaturezaOperacaoList</action>
+        <icon>far:circle fa-fw</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="_t{Administration}">
+    <icon>fas:home fa-fw</icon>
+    <menu>
+      <menuitem label="_t{Programs}">
+        <action>SystemProgramList</action>
+        <icon>far:file-code fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Groups}">
+        <action>SystemGroupList</action>
+        <icon>fas:users fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Users}">
+        <action>SystemUserList</action>
+        <icon>fas:user fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Preferences}">
+        <action>SystemPreferenceForm#method=onEdit</action>
+        <icon>fas:cog fa-fw</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Logs">
+    <icon>fas:desktop fa-fw</icon>
+    <menu>
+      <menuitem label="Dashboard">
+        <action>SystemLogDashboard</action>
+        <icon>fas:tachometer-alt fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Access Log}">
+        <action>SystemAccessLogList</action>
+        <icon>fas:key fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Change Log}">
+        <action>SystemChangeLogView</action>
+        <icon>fas:film fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{SQL Log}">
+        <action>SystemSqlLogList</action>
+        <icon>fas:database fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{Request Log}">
+        <action>SystemRequestLogList</action>
+        <icon>fas:globe fa-fw</icon>
+      </menuitem>
+      <menuitem label="_t{PHP Log}">
+        <action>SystemPHPErrorLogView</action>
+        <icon>fas:exclamation-triangle fa-fw</icon>
+      </menuitem>
+    </menu>
+  </menuitem>
+  <menuitem label="Logout">
+    <icon>fas:sign-out-alt fa-fw</icon>
+    <action>LoginForm#method=onLogout#static=1</action>
+  </menuitem>
+</menu>

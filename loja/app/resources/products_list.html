@@ -1,0 +1,40 @@
+<!--[main]-->
+<div id="div_steps" style="padding-bottom: 10px">
+    <ul class="tpagestep">
+        <li class="active">
+            <span class="step-number">1</span>
+            <span class="step-title">_t{Selection}</span>
+        </li>
+        <li>
+            <span class="step-number">2</span>
+            <span class="step-title">_t{Identification}</span>
+        </li>
+        <li>
+            <span class="step-number">3</span>
+            <span class="step-title">_t{Confirm transaction}</span>
+        </li>
+        <li>
+            <span class="step-number">4</span>
+            <span class="step-title">_t{Payment}</span>
+        </li>
+    </ul>
+</div>
+
+<div class="catalog">
+    <!--[products]-->
+    <div class="product" style="background: rgba(28, 8, 39, 0.6); border-radius: 25px;">
+        <div style="height:150px;">
+            <img src="{$image}"><br>
+        </div>
+        <a target="newwindow" href="{$url}">{$description} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a><br>
+        
+        <br>
+        <b style="font-size:12pt; color: white;">12 x {$currency} {$price_part}</b> <i title="Ao optar pelo pagamento em Cartão de Crédito pelo PagSeguro" class="fa fa-info-circle blue" aria-hidden="true"></i>
+        <br>
+        <i style="font-size:10pt; color: white;">ou {$currency} {$price} à vista</i> 
+        <br>
+        <a style="font-size:12pt;margin-left:0px;width:75%;padding: 5px 10px !important;" target="{$target}" href="{$buyurl}" class="btn btn-success"> <b> _t{Buy} </b> </a>
+    </div>
+    <!--[/products]-->
+</div>
+<!--[/main]-->

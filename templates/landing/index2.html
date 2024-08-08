@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste</title>
+    <style>
+        .box {display:flex;}
+        mode-viewer {width: 800px; height: 500px; margin:0, auto}
+    </style>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script type="module">
+      const modelViewer = document.querySelector('#change-speed-demo');
+      const speeds = [0.1];
+
+      let i = 0;
+      const play = () => {
+        modelViewer.timeScale = speeds[i++%speeds.length];
+        modelViewer.play({repetitions: 1});
+      };
+      modelViewer.addEventListener('load', play);
+      modelViewer.addEventListener('finished', play);
+    </script>
+</head>
+<body>
+    <div class = "box">
+            <div>Hey check this out</div>
+            <div>
+                <model-viewer id="change-speed-demo" autoplay ar camera-controls touch-action="pan-y" src="./earth.glb" autoplay>
+                </model-viewer>
+            </div>
+        </div>
+</body>
+</html>
+<model-viewer id="change-speed-demo" class="model_intro" autoplay ar camera-controls touch-action="pan-y" src="./earth.glb" autoplay>
+                            </model-viewer>

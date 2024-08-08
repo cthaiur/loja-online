@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>InFly</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    {LIBRARIES}
+
+    <!-- Favicon -->
+    <link href="img/favicon1.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../templates/{theme}/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../templates/{theme}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../templates/{theme}/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../templates/{theme}/css/style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0 mb-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home" >
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+
+                    <h1 class="m-0"><img src="../templates/{theme}/img/logo2.png"></h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="https://infly.net.br/loja-online/index.php#home" class="nav-item nav-link">Home</a>
+                        <a href="https://infly.net.br/loja-online/index.php#about" class="nav-item nav-link">Proposta</a>
+                        <a href="https://infly.net.br/loja-online/index.php#feature" class="nav-item nav-link">Benefícios</a>
+                        <a href="https://infly.net.br/loja-online/index.php#pricing" class="nav-item nav-link">Preço</a>
+                        <a href="https://infly.net.br/loja-online/index.php#review" class="nav-item nav-link">Alunos</a>
+                        <a href="https://infly.net.br/loja-online/index.php#contact" class="nav-item nav-link">Contato</a>
+                        <a href="#" class="nav-item nav-link active">Loja</a>
+                    </div>
+                    <a href="https://infly.net.br/rocket" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Área do Aluno</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header-loja" >
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            {page_content}
+                        </div>
+                        <!-- <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp">
+                            <div class="owl-carousel screenshot-carousel">
+                            	<model-viewer class="model_intro_astronaut" autoplay ar camera-controls touch-action="pan-y" src="./astronaut_little.glb" autoplay></model-viewer>    
+                            </div>                            
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Navbar & Hero End -->
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Endereço</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>234 Rua, Tupanciretã, RS</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+055 55 996235142</p>
+                        <p><i class="fa fa-envelope me-3"></i>contato@infly.net.br</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Link Rápidos</h4>
+                        <a class="btn btn-link" href="">Sobre Nós</a>
+                        <a class="btn btn-link" href="">Recursos</a>
+                        <a class="btn btn-link" href="">Política de Privacidade</a>
+                        <a class="btn btn-link" href="">Termos & Condições</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Link Acessados</h4>
+                        <a class="btn btn-link" href="">Sobre Nós</a>
+                        <a class="btn btn-link" href="">Recursos</a>
+                        <a class="btn btn-link" href="">Política de Privacidade</a>
+                        <a class="btn btn-link" href="">Termos & Condições</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Missão</h4>
+                        <p>"Elevar pessoas e empresas ao redor do mundo à concretizarem todo seu potencial, fluindo no processo."</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Seu Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="https://dataplace.net.br">DP Solutions</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                            </br>
+                            Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../templates/{theme}/lib/wow/wow.min.js"></script>
+    <script src="../templates/{theme}/lib/easing/easing.min.js"></script>
+    <script src="../templates/{theme}/lib/waypoints/waypoints.min.js"></script>
+    <script src="../templates/{theme}/lib/counterup/counterup.min.js"></script>
+    <script src="../templates/{theme}/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+    <!-- Template Javascript -->
+    <script src="../templates/{theme}/js/main.js"></script>
+</body>
+
+</html>
